@@ -116,7 +116,7 @@
     </div>
     <audio id="play1" preload="auto" src="dekha.mp3"></audio>
     <audio id="play2" preload="auto" src="Tu-Hai.mp3"></audio>
-    <audio id="play3" preload="auto" src="hab.mp3"></audio>
+    <audio id="play3" preload="auto" src="tmr.mp3"></audio>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
     <script>
  
@@ -170,7 +170,9 @@ function playSong1(){
 }
 
 function playSong3(){
+    
   Audioi =document.getElementById('play3')
+    Audioi.currentTime=60;
   Audioi.play();
 }
 
