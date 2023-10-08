@@ -23,10 +23,10 @@
         </div>
         <div class="bt">
           <div class="bt-left">
-            <p class="p"><!--Of course! Here's a birthday wish for the special girl:
+            <p class="p">Of course! Here's a birthday wish for the special kid:
 
-              "🎉🎂 Happy Birthday to an amazing and wonderful girl! 🎈🎁 May your day be filled with joy, laughter, and unforgettable moments. May this year bring you all the happiness and success you deserve. Keep shining bright and spreading your positive energy everywhere you go. Enjoy your day to the fullest! 🎉🎊"</p>
-            --></div>
+              "🎉🎂 Happy Birthday to an amazing and wonderful kiddo! 🎈🎁 May your day be filled with joy, laughter, and unforgettable moments. May this year bring you all the happiness and success you deserve. Keep shining bright and spreading your positive energy everywhere you go. Enjoy your day to the fullest! 🎉🎊"</p>
+            ></div>
           <div class="bt-img">
             <img src="" alt="">
           </div>
@@ -34,7 +34,7 @@
         
         <div class="box">
             <div class="hcard">
-              <div class="imgBx" id="div1" onmouseover="playSong()" onmouseout="pauseSong()">
+              <div class="imgBx" onmouseover="playSong1()" onmouseout="pauseSong1()">
                   <img src="https://drive.google.com/uc?id=15a1uyKyIKqdtTjThPD68gwaEQKKscV7k" alt="images">
               </div>
               <div class="details">
@@ -43,7 +43,7 @@
             </div>
           
              <div class="hcard">
-               <div class="imgBx" id="div2" onmouseover="playSong()" onmouseout="pauseSong()">
+               <div class="imgBx"  onmouseover="playSong2()" onmouseout="pauseSong2()">
                   <img src="https://drive.google.com/uc?id=17kmmC4IRntdKk_yyACqCE7Qjq-pkJ5ec" alt="images">
                </div>
                <div class="details">
@@ -51,17 +51,18 @@
                 </div>
              </div>
       
-             <div class="hcard">
-               <div class="imgBx" id="div3" onmouseover="playSong()" onmouseout="pauseSong()">
+              <div class="hcard">
+              <div class="imgBx" id="hoverElement" onmouseover="playSong()" onmouseout="pauseSong()">
                   <img src="https://drive.google.com/uc?id=15j2-FshbJ9Jqy9S1Xn4qyD5mIlXd4wGF" alt="images">
-               </div>
-               <div class="details">
+              </div>
+              <div class="details">
                   <h2>Unconditional Love<br><span>Family</span></h2>
-                </div>
-             </div>
+              </div>
+          </div>
        
         </div>
-    
+
+
         <section class="new-line-section">
             
     
@@ -113,10 +114,9 @@
           <a href="https://instagram.com/mohitkhyalia_mk">Developer</a>
         </div>
     </div>
-    <!--audio id="myAudio1" src="https://drive.google.com/uc?id="></!--audio-->
-
-    <audio id="myAudio" preload="auto" src=""></audio>
-
+    <audio id="play1" preload="auto" src="dekha.mp3"></audio>
+    <audio id="play2" preload="auto" src="Tu-Hai.mp3"></audio>
+    <audio id="play3" preload="auto" src="hab.mp3"></audio>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
     <script>
  
@@ -157,35 +157,37 @@ function randomInRange(min, max) {
 const canvas = document.getElementById("confettiCanvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-const durationt = 10000; // Set your desired animation duration here (10 seconds)*/
-var audio = document.getElementById("myAudio");
-document.getElementById("div1").addEventListener("mouseenter", function() {
-    audio.src = "Happy Birthday Song Lyrics Video ♥️😘 -- WhatsApp Status --.mp3"; // Set the source of the audio element to song 4
-    playSong();
-});
+const durationt = 10000; 
 
-document.getElementById("div2").addEventListener("mouseenter", function() {
-    audio.src = "iti.mp3"; // Set the source of the audio element to song 4
-    playSong();
-});
+function playSong1(){
+  Audioi =document.getElementById('play1')
+  Audioi.currentTime=10;
+  Audioi.play();
 
-document.getElementById("div3").addEventListener("mouseenter", function() {
-    audio.src = "Dekha Hazaro Dafaa - Rustom - Akshay Kumar & Ileana D'cruz - Arijit Singh & Palak - Jeet Gannguli (1).mp3"; // Set the source of the audio element to song 4
-    playSong();
-});
-
-function playSong() {
-    audio.currentTime = 44; // Reset playback position to the beginning
-    audio.play();
-  }
-  
-  audio.load();
-function pauseSong() {
-    audio.pause();
+}function playSong2(){
+  Audioi =document.getElementById('play2')
+  Audioi.play();
 }
 
+function playSong3(){
+  Audioi =document.getElementById('play3')
+  Audioi.play();
+}
 
+function pauseSong1() {
+  Audioi =document.getElementById('play1')
+  Audioi.pause();
+}
 
+function pauseSong2() {
+  Audioi =document.getElementById('play2')
+  Audioi.pause();
+}
+
+function pauseSong3() {
+  Audioi =document.getElementById('play3')
+  Audioi.pause();
+}
     </script>
 </body>
 </html>
